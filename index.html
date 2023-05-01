@@ -12,15 +12,15 @@
     <div class="header"><p class="title">Lista de tarefas</p></div>
     <div class="all-content">
       <div class="enter-input">
-        <label for="to-do-input"></label>
-        <input
-          id="to-do-input"
-          type="text"
-          class="to-do-input"
-          name="to-do"
-          value=""
-          onkeyup="onKey()"
-        />
+        <form id="form">
+          <input
+            id="to-do-input"
+            type="text"
+            class="to-do-input"
+            name="to-do"
+            value=""
+          />
+        </form>
       </div>
       <div class="list-todo">
         <table id="table"></table>

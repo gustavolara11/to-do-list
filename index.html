@@ -9,8 +9,12 @@
     <title>To-do List</title>
   </head>
   <body>
-    <div class="header"><p class="title">Lista de tarefas</p></div>
+    <div class="header"><p class="title">Lista de Tarefas</p></div>
     <div class="all-content">
+      <p class="description">
+        Adicione um tarefa e de ENTER. Clique na tarefa para completar. Clique
+        com botão direito para excluir.
+      </p>
       <div class="enter-input">
         <form id="form">
           <input
@@ -19,6 +23,7 @@
             class="to-do-input"
             name="to-do"
             value=""
+            autocomplete="off"
           />
         </form>
       </div>

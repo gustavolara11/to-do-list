@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("form");
   const input = document.getElementById("to-do-input");
   const table = document.getElementById("table");
-
+  //salvar em localstorage
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     if (input.value != "") {
@@ -26,15 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-// colocar numa classe e add class "" e add nova classe e colocar os styles no css
+
 function lineT(e) {
   let textToLine = this;
-  textToLine.style.textDecoration = "line-through";
-  textToLine.style.color = "rgba(1,1,1,0.3)";
-  textToLine.style.boxShadow = "2px 2px 5px 2px rgba(45, 0, 194, 0.1)";
-  textToLine.style.outline = "none";
-  textToLine.style.border = "none";
+  textToLine.classList.remove("to-do-list");
+  textToLine.classList.add("to-do-line-through");
 }
+
 function deleteI(e) {
   let textToDelete = this;
   e.preventDefault();

@@ -21,7 +21,7 @@ body {
   justify-content: center;
 }
 .title {
-  color: #e0e0e0;
+  color: #b8b8b8;
 }
 .all-content {
   width: 100%;
@@ -30,6 +30,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.description {
+  width: 310px;
+  color: #b4b4b4;
+  text-shadow: 2px 2px 5px rgb(196, 196, 196);
+  font-size: 16px;
+  padding: 80px 0px 40px 0px;
+  line-height: 30px;
+}
 .enter-input {
   width: 800px;
   height: auto;
@@ -37,7 +45,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 86px;
 }
 .to-do-input {
   cursor: pointer;
@@ -53,21 +60,13 @@ body {
   color: rgba(36, 0, 155, 0.7);
   outline: none;
 }
-.to-do-input:hover {
+.to-do-input:hover,
+.to-do-input:active,
+.to-do-input:focus {
   border-color: rgba(45, 0, 194, 0.3);
   box-shadow: 1px 1px 3px 1px rgba(45, 0, 194, 0.3);
 }
-.to-do-input:focus {
-  border-color: rgba(45, 0, 194, 0.7);
-  box-shadow: 1px 1px 3px 1px rgba(45, 0, 194, 0.9);
-}
-.to-do-input:active {
-  border-color: rgba(45, 0, 194, 0.7);
-  box-shadow: 1px 1px 3px 1px rgba(45, 0, 194, 0.9);
-  outline: none;
-  border: none;
-  caret-color: rgb(0, 0, 0);
-}
+
 .to-do-list {
   display: flex;
   flex-direction: column;
@@ -87,4 +86,24 @@ body {
   margin: 12px;
   outline: none;
   caret-color: transparent;
+}
+.to-do-line-through {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 300px;
+  height: 80px;
+  border-radius: 24px;
+  background-color: rgba(250, 250, 250, 0.5);
+  padding-left: 12px;
+  font-size: 24px;
+  margin: 12px;
+  outline: none;
+  caret-color: transparent;
+  text-decoration: line-through;
+  color: rgba(129, 129, 129, 0.6);
+  box-shadow: 2px 2px 5px 2px rgba(45, 0, 194, 0.1);
+  border: none;
 }
